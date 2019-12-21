@@ -19,7 +19,11 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "chroma-sass": "^1.2.6",
+    "gatsby-plugin-sass": "^2.1.26",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "typey": "^1.1.2"
   },
   "keywords": [
     "gatsby"
@@ -28,7 +32,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "prettier \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
