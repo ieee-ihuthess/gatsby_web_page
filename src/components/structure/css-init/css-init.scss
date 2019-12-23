@@ -2,10 +2,12 @@
 @import "./../colors/colors";
 @import "./../typography/typography.scss";
 @import "./../css-variables/css-variables";
+// @import "font-awesome/scss/font-awesome";
+// $fa-font-path: "font-awesome/fonts";
 
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -13,4 +15,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: color('white');
+}
+
+
+html {
+  @include typeface(helvetica);
+  @include typeset(text);
 }

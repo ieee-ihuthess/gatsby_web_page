@@ -15,6 +15,7 @@ module.exports = {
           path.resolve(__dirname, "src", "components"),
           path.resolve(__dirname, "src", "components", "layouts", "css-init"),
           path.resolve(__dirname, "node_modules", "chroma-sass", "sass"),
+          path.resolve(__dirname, "node_modules"),
           path.resolve(__dirname, "css"),
         ],
       },

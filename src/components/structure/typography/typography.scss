@@ -1,4 +1,61 @@
+@import "typey";
+
+$base-unit: rem;
+$base-font-size: 16px;
+$base-line-height: 25px;
+$base-line-height-ratio: 1.5;
+$print-font-size: 12pt;
+
+$font-size: (
+  xxl: 50px,
+  xl: 30px,
+  l: 25px,
+  m: 15px,
+  s: 13px,
+);
+
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 25px;
+  @include define-type-sizing;
 }
+
+//  Add the available fonts.
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// Declare typefaces.
+$typefaces: (
+  helvetica: (
+    font-family: $helvetica
+  )  
+);
+
+
+// Declare typestyles.
+$typestyles: (
+  super-title: (
+    font-size: xxl,
+    line-height: 50px,
+  ),
+  title: (
+    font-size: xl,
+    line-height: xl,
+  ),
+  title-small: (
+    font-size: l,
+    line-height: l,
+  ),
+  text: (
+    font-size: m,
+    line-hight: m,
+  ),
+  text-small: (
+    font-size: s,
+    line-hight: s,
+  ),
+  uppercase: (
+    text-transform: uppercase,
+  )
+);
+
+$typey-debug: false;
+$typey-debug-color: red;
