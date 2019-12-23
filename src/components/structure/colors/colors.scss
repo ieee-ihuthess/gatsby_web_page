@@ -1,0 +1,27 @@
+@import "normalize-scss";
+@import "chroma";
+@import "chroma/functions";
+
+// Define the default color scheme.
+$chroma: define-default-color-scheme("default");
+
+// Add colors to the default color scheme.
+$chroma: add-colors(
+  (
+    // color palette
+    "white": #fff,
+    "black": #000,
+    "blue": #1c6198,
+    "red": #c00,
+    "grey": #777,
+    "grey-very-dark": #333,
+    "cyan": #e0ffff,
+    
+    // color-scheme colors
+    primary: "grey-very-dark",
+    secondary: "blue",
+    tertiary: "grey",
+    color-text: "primary",
+    color-text-reverse: "white"
+  )
+);
