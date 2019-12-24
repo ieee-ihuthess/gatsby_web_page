@@ -7,7 +7,7 @@ library.add(faCoffee);
 
 const defaultItem = {
   icon: "coffee",
-  title: "Lorem Ipsum", 
+  title: "Lorem Ipsum",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 }
 

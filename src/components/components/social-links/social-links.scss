@@ -1,0 +1,30 @@
+@import "./../../structure/css-init/css-init";
+
+.social-links {
+  display: flex;
+  padding: 0;
+
+  &__list-item {
+    @include padding-left(0.3);
+    @include padding-right(0.3);
+    list-style-type: none;
+    color: color('primary');
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__item-link {
+    color: color('primary');
+    transition: .2s ease-out;
+
+    &:hover {
+      color: color('secondary');
+    }
+  }
+}
