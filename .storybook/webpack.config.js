@@ -31,7 +31,13 @@ module.exports = ({ config }) => {
         loader: "css-loader" // translates CSS into CommonJS
       },
       {
-        loader: "sass-loader" // compiles Sass to CSS
+        loader: "sass-loader", // compiles Sass to CSS
+        options: {
+          sassOptions: {
+            indentWidth: 2,
+            includePaths: ['node_modules/chroma-sass/sass'],
+          }
+        }
       }
     ]
   };
